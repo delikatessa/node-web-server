@@ -1,0 +1,12 @@
+html
+  head
+    title= 'Website'
+    p
+      a(href='/') Home
+    p
+      a(href='/about') About
+  body
+    h1= pageTitle
+    block page
+    footer 
+      p= 'Copyright ' + new Date().getFullYear()
