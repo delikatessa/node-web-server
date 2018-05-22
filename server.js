@@ -4,6 +4,8 @@ const express = require('express');
 const pug = require('pug');
 const fs = require('fs');
 
+const PORT = process.env.PORT || 3000;
+
 var app = express();
 
 app.set('view engine', 'pug');
@@ -52,6 +54,6 @@ app.get('/bad', (req, res) => {
 	});
 });
 
-app.listen(3000, () => {
-	console.log('Server is up on port 3000');
+app.listen(PORT, () => {
+	console.log(`Server is up on port ${PORT}`);
 });
