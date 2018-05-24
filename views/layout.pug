@@ -1,12 +1,13 @@
 html
   head
-    title= 'Website'
+    h1= pageTitle
     p
       a(href='/') Home
     p
       a(href='/about') About
+    p
+      a(href='/projects') Projects
   body
-    h1= pageTitle
     block page
     footer 
       p= 'Copyright ' + new Date().getFullYear()
